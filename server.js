@@ -1,5 +1,6 @@
 var express = require('express');
-var PORT = 3000;
+var PORT = process.env.PORT || 3000; // port to listen on for HEROKU
+
 //starts the server
 var app = express();
 var middleware = require ('./middleware.js');
