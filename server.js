@@ -24,7 +24,7 @@ app.use(middleware.logger);
 //call the get HTTP method
 app.get ('/about', middleware.requireAuthentication, function (req, res)
 {
-	res.send ('About Us.... \n Orchard, Singapore ');
+	res.send (' * About Us.... \n Orchard, Singapore ');
 })
 
 //expose the public folder
